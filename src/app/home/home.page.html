@@ -6,7 +6,6 @@
 
     <ion-title *ngIf="!showSearch">
       <span class="title-container">
-        <span class="title-text ion-hide-sm-down">{{ 'App.RootPrefix' | translate }}</span>
         <img class="title-logo" src="assets/logo.png" />
       </span>
     </ion-title>
@@ -19,15 +18,6 @@
     <ion-buttons slot="end">
       <ion-button (click)="toggleSearch()" [title]="'App.Titles.Search' | translate">
         <ion-icon name="search"></ion-icon>
-      </ion-button>
-      <ion-button *ngIf="!showSearch" (click)="openFAQ()" [title]="'App.Titles.FAQ' | translate">
-        <ion-icon name="help-circle"></ion-icon>
-      </ion-button>
-      <ion-button *ngIf="!showSearch" (click)="openReach()" [title]="'App.Titles.Reach' | translate">
-        <ion-icon name="calculator"></ion-icon>
-      </ion-button>
-      <ion-button *ngIf="!showSearch" (click)="openMaps()" [title]="'App.Titles.Map' | translate">
-        <ion-icon name="map"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -86,8 +76,8 @@
               [innerHTML]="grandchildRule.text | highlight:searchTerm:grandchildRule.index"></span>
 
             <!-- please never go deeper -->
-            <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
-              <li *ngFor="let descRule of grandchildRule.subchildren; let descIndex = index"
+            <ol class="romanized-list list" *ngIf="grandchildRule.children">
+              <li *ngFor="let descRule of grandchildRule.children; let descIndex = index"
                 [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1])">
                 <a class="name child" [id]="rulesService.indexesToRules[descRule.index]"
                   [innerHTML]="descRule.formattedName | highlight:searchTerm:descRule.index"
@@ -96,8 +86,8 @@
                 <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm:descRule.index"></span>
 
                 <!-- I said please :( -->
-                <ol class="alphabeta-list list sublist" *ngIf="descRule.subchildren">
-                  <li *ngFor="let descDescRule of descRule.subchildren; let descDescIndex = index"
+                <ol class="alphabeta-list list sublist" *ngIf="descRule.children">
+                  <li *ngFor="let descDescRule of descRule.children; let descDescIndex = index"
                     [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1, descDescIndex + 1])">
                     <a class="name child" [id]="rulesService.indexesToRules[descDescRule.index]"
                       [innerHTML]="descDescRule.formattedName | highlight:searchTerm:descDescRule.index"

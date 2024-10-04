@@ -6,9 +6,6 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { HighlightPipe } from '../highlight.pipe';
-import { FAQModalPage } from '../faqmodal/faqmodal.page';
-import { ReachModalPage } from '../reachmodal/reachmodal.page';
-import { MapModalPage } from '../mapmodal/mapmodal.page';
 import { SharedModule } from '../shared.module';
 
 @NgModule({
@@ -24,7 +21,6 @@ import { SharedModule } from '../shared.module';
       }
     ])
   ],
-  declarations: [HomePage, FAQModalPage, ReachModalPage, MapModalPage, HighlightPipe],
-  entryComponents: [FAQModalPage, ReachModalPage, MapModalPage]
+  declarations: [HomePage, HighlightPipe]
 })
 export class HomePageModule {}

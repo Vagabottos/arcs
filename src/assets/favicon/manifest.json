@@ -1,8 +1,8 @@
 {
-    "name": "Root: Woodland Companion",
-    "short_name": "Root: TWC",
-    "theme_color": "#bc4424",
-    "background_color": "#bc4424",
+    "name": "Arcs: Void Companion",
+    "short_name": "Arcs: TVC",
+    "theme_color": "#000000",
+    "background_color": "#000000",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",

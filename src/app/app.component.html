@@ -21,18 +21,6 @@
                       <img *ngIf="ruleHead.icon" class="inline-icon ion-margin-start" [src]="'assets/inicon/faction-' + ruleHead.icon + '.png'" />
             </ion-item>
           </ion-menu-toggle>
-
-          <ion-item class="language">
-            <ion-label>Language</ion-label>
-            <ion-select placeholder="Select Language" (ionChange)="languageChange()" [(ngModel)]="language">
-              <ion-select-option value="en-US">English</ion-select-option>
-              <ion-select-option value="pt-BR">Português</ion-select-option>
-              <ion-select-option value="es-ES">Español</ion-select-option>
-              <ion-select-option value="de-DE">Deutsch</ion-select-option>
-              <ion-select-option value="ru-RU">Russian</ion-select-option>
-              <ion-select-option value="pl-PL">Polski</ion-select-option>
-            </ion-select>
-          </ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>
