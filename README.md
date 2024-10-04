@@ -51,10 +51,6 @@ sentence atom level.
 ## TODOs
 
 - Add icon images for resources
-- Add icon image for diamond
-- Add icon image for edicts
-- Add icon image for crises
-- Add icon image for player head
 
 
 ## Want to Contribute Rules?
