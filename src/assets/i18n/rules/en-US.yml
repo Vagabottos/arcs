@@ -950,7 +950,7 @@
 
         - name: "Step 2: Clean Up & Flip Ambition."
           text: >
-            "Resolve the following steps:"
+            Resolve the following steps:
 
           children:
             - name: "Step 1: Warlord and Tyrant."
