@@ -1792,7 +1792,7 @@
         Event cards are a new kind of action card added during setup.
 
       children:
-        - name: Playing an Event.
+        - name: Playing an Event Card.
           text: >
             On your turn, you may play an Event card. ***You cannot Lead it, Copy with it, or
             discard it to seize the initiative.***
