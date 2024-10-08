@@ -2183,7 +2183,8 @@
         - name: Building Buildings.
           text: >
             You cannot **build** Loyal cities or starports on the map. Instead, you can build them
-            on your Flagship board as Upgrades and Armor. (See **Upgrades & Armor**.)
+            on your Flagship board as Upgrades and Armor. (**Upgrades & Armor**,
+            `rule-relative::Flagships$Upgrades & Armor`)
 
         - name: Building Ships.
           text: >
