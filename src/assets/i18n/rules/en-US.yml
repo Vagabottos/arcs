@@ -1978,8 +1978,8 @@
               text: >
                 Give 1 Captive, Trophy, Favor, or resource you have to a Rival. If it is their
                 Loyal piece, return it to their supply. Forcing you to give a resource with Return
-                Favors (see `rule-relative::Summits$Negotiations$Negotiation Actions.$Transfer
-                Asset.`) costs Favors equal to its raid cost.
+                Favors (see `rule-relative::Summits$Call to Order$Return Favors.`) costs Favors
+                equal to its raid cost.
 
             - name: Invite to Empire.
               text: >
