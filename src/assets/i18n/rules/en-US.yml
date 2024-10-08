@@ -1878,8 +1878,7 @@
             - name: "Step 2: Become First Regent."
               text: >
                 If you’re a **Regent**, take the First Regent tile, keeping all resources on the
-                Imperial Trust (`rule-relative::Edicts$Collect Imperial Demand$Resources.$Imperial
-                Trust.`).
+                Imperial Trust (`rule-relative::Edicts$Collect Imperial Demand$Resources.`).
 
             - name: "Step 3: Steal from Empire."
               text: >
@@ -2092,33 +2091,19 @@
       children:
         - name: Resources.
           text: >
-            Resources go on the First Regent tile, adding to the Imperial Trust (see
-            `rule-relative::Edicts$Collect Imperial Demand$Resources.$Imperial Trust.`). The First
-            Regent ***must also*** add 1 resource shown by the Demand to the Trust, if they have
-            it.
+            Resources go on the First Regent tile, adding to the Imperial Trust. The First Regent
+            ***must also*** add 1 resource shown by the Demand to the Trust, if they have it.
+            _(These resources have no raid cost, so they cannot be stolen in battle. However, cards
+            such as Silver-Tongues can steal them, and Outlaws can steal them by securing the
+            Imperial Council – see `rule-relative::Events & the Imperial Council$Imperial Council`.
+            These resources return to the supply during the Intermission – see
+            `rule-relative::Intermission$C. Clear Pieces$Step 2.`.)_
 
           children:
-            - name: Imperial Trust.
-              text: >
-                By enforcing the Imperial Policy, the First Regent adds resources to the **Imperial
-                Trust** on their First Regent tile.
-
             - name: Frozen.
               text: >
                 Resources in the Imperial Trust are **frozen** except for Imperial Actions (see
                 `rule-relative::Campaign Rules & Terms$Resources$Frozen.`).
-
-            - name: Stealing.
-              text: >
-                These resources have no raid cost, so they cannot be stolen in battle. However,
-                cards such as Silver-Tongues can steal them, and Outlaws can steal them by securing
-                the Imperial Council (see `rule-relative::Events & the Imperial Council$Imperial
-                Council`).
-
-            - name: Intermission.
-              text: >
-                Resources on the Imperial Trust return to the supply during the Intermission (see
-                `rule-relative::Intermission$C. Clear Pieces$Step 2.`).
 
         - name: Trophies & Captives.
           text: >
