@@ -2244,34 +2244,45 @@
             respectively.
 
           children:
-            - name: Ship Crane (Material → Fuel).
+            - name: Ship Crane.
               text: >
-                You may **build** up to 2 ships per turn in your Flagship’s system.
+                You may **build** up to 2 ships per turn in your Flagship’s system. Building this
+                upgrade requires your flagship to be at a Material planet, and building this
+                upgrade's armor requires your flagship to be at a Fuel planet.
 
-            - name: Defense Array (Weapon → Psionic).
+            - name: Defense Array.
               text: >
                 When your Flagship is defending in **battle**, it deals intercept hits equal to the
-                number of ***fresh starports*** on its Flagship board.
+                number of ***fresh starports*** on its Flagship board. Building this upgrade
+                requires your flagship to be at a **Weapon planet**, and building this upgrade's
+                armor requires your flagship to be at a **Psionic planet**.
 
-            - name: Slipstream Drive (Fuel → Relic).
+            - name: Slipstream Drive.
               text: >
                 Once per turn, in your Prelude, you may Catapult move either your Flagship alone
-                ***or*** other ships from your Flagship.
+                ***or*** other ships from your Flagship. Building this upgrade requires your
+                flagship to be at a **Fuel planet**, and building this upgrade's armor requires
+                your flagship to be at a **Relic planet**.
 
-            - name: Control Array (Psionic → Material).
+            - name: Control Array.
               text: >
                 While your Flagship is in a gate, you may **tax** any cities in its cluster like
-                they are Loyal.
+                they are Loyal. Building this upgrade requires your flagship to be at a **Psionic
+                planet**, and building this upgrade's armor requires your flagship to be at a
+                **Material planet**.
 
-            - name: Tractor Beam (Relic → Weapon).
+            - name: Tractor Beam.
               text: >
                 When your Flagship is defending in **battle**, the attacker cannot collect raid
-                dice.
+                dice. Building this upgrade requires your flagship to be at **a Relic planet**,
+                and building this upgrade's armor requires your flagship to be at **a Weapon
+                planet**.
 
-            - name: Hull (Any Planet → Any Planet).
+            - name: Hull.
               text: >
                 This Upgrade has no unique benefit, but building cities will open resource slots,
-                and building starports will let you collect more dice in battle.
+                and building starports will let you collect more dice in battle. You can build
+                this upgrade and its armor when you flagship is at **any planet**.
 
     - name: Flagship Battles
       pretext: >
@@ -2313,7 +2324,7 @@
               text: >
                 If the attacker rolls a `symbol::intercept`, your Flagship ***does not
                 intercept*** unless it has a Defense Array (see `rule-relative::Flagships$Upgrades
-                & Armor$Upgrade Benefits.$Defense Array (Weapon → Psionic).`).
+                & Armor$Upgrade Benefits.$Defense Array.`).
 
             - name: Taking Hits as Defender.
               text: >
