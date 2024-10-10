@@ -1620,8 +1620,8 @@
 
     One Regent is the **First Regent**, who governs the Empire (see `rule-relative::The Empire`)
     and holds the **Imperial Trust**
-    (see `rule-relative::Edicts$Collect Imperial Demand$Resources.$Imperial Trust.`), resources
-    they collect from Regents as tribute for the distant Emperor.<br><br>
+    (see `rule-relative::Edicts$Collect Imperial Demand$Resources.`), resources they collect from
+    Regents as tribute for the distant Emperor.<br><br>
 
     A Regent can become an **Outlaw** by calling a Summit (see `rule-relative::Summits`). Outlaws
     can be attacked by the Empire, but they can battle Regents freely and don’t pay into the
